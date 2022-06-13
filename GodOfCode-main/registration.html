@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css"/>
+    <script src="js/prism.js"></script>
+
+    <script language="javascript" type="text/javascript">
+      function empdate()
+      {
+          var birthday=document.getElementById("date").value;
+          var dob=new Date(birthday);
+          var today=new Date();
+          var ages=today.getTime()-dob.getTime();
+          ages=Math.floor(ages/(1000*60*60*24*365.25));
+          var age=document.getElementById('age');
+          age.value=ages;
+      }
+    
+           </script>
+</head>
+<body style="background-color:  #c2f6f6;">
+  <div class="header_data">
+    <h1><center></center></h1> 
+</div>
+ <div id="main">
+            <div class="head"><p id="ut"> REGISTRATION PORTAL</p>   </div>
+            <ul class="mylist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="user.html">User-Details</a></li>
+                <li><a href="javascript:alert('Under construction');">About us</a></li>
+                <li><a href="javascript:alert('Under construction');">Contact us</a></li>
+            </ul>
+ </div>
+ 
+ <div  class="header" >
+  <u><h1 class="ud">VACCINE REGISTRATION PORTAL</h1></u>
+</div>
+<center>
+<form id="clg"  action="#"  name="clg" >
+<div class="valid">
+    <table class="shit" >
+     <tr>
+         <td id="ty">NAME</td>
+    
+         <td><input type="text" id="name" name="name" placeholder="ENTER YOUR NAME"/></td>
+     </tr>
+    <tr>
+    <td id="ty">
+       GENDER:
+    </td>
+</tr>
+<tr>
+   <td id="ty">
+    <input type="radio" id="gender"  name="gender" value="men"/>MALE
+    <input type="radio" id="gender"   name="gender" value="female"/>FEMALE
+    <input type="radio"  id="gender"  name="gender" value="other"/>OTHER
+</td>
+</tr>
+<tr>
+<td id="ty">EMAIL ID: </td>
+<td><input type="text" id ="emails" name="mail"  placeholder="ENTER YOUR MAIL ID"></td>
+</tr>
+<tr>
+  <td id="ty">PHONE-NUMBER: </td>
+  <td><input type="text" name="phone" id="phones"   placeholder="ENTER YOUR PHONE"></td>
+  </tr>
+<tr>
+<td id="ty">ADHAR-NUMBER:</td>
+
+<td><input type="text" name="adhaar" id="adhaar"   placeholder="ENTER YOUR ADHAR-NUMBER"></td>
+</tr>
+<tr>
+  <td id="ty">ADDRESS:</td>
+  
+  <td><input type="text" name="address" id="address"   placeholder="ENTER YOUR ADDRESS"></td>
+  </tr>
+<tr>
+<td id="ty">DATE OF BIRTH:</td>
+
+<td><input  type="date" id="date" name="date" style="width: 214px;" onblur="empdate();" value='' placeholder="ENTER YOUR BIRTH-DATE"></td><br/>
+<!--<td ><input type="button"  onclick="empdate();" value="auto"/>-->
+</tr>
+<tr>
+<td id="ty">AGE:</td>
+
+<td><input  type="text" id="age" name="age" style="width: 214px;" readonly="true"></td>
+</tr>
+<tr>
+     <td><label id="ty" for="min">SUBMIT FORM:</label></td>
+   <td>  <input type="submit" name="save" id ="save" value="SUBMIT" onclick="saveData()"/></td>
+</tr>
+<tr>
+  <td><label id="ty" for="min">BACK TO HOME:</label></td>
+<td>  <a href="user.html" id="ty">Show Details</a></td>
+</tr>
+</table>
+</div>
+</form>
+</center>
+</body>
+<style>
+  .ud
+{
+
+text-decoration: none;
+text-align: center;
+font-weight: 100vh;
+text-transform: uppercase;
+color: rgb(75, 18, 75);
+font-weight: bolder;
+font-size: xx-large;
+letter-spacing: 1px;
+margin-top: 20px;
+
+}
+table
+{
+      /* position: fixed; */
+    /* top: 35px; */
+    /* left: 60px; */
+    /* width: 100%; */
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 3px solid #655aa7;
+
+}
+
+.shit
+{
+float: center;
+}
+
+.shit input[type="submit"]
+{
+height: 50px;
+width: 120px;
+margin-top: 20px;
+border-radius: 30px;
+background:none;
+border: 3px solid rgb(106, 43, 114);
+outline: none; 
+text-transform: uppercase;
+color: rgb(75, 18, 75);
+font-weight: bolder; 
+font-size:x-large;
+}
+
+
+.shit 
+input[type="submit"]:focus
+{
+background-color: rgb(17, 202, 131);  
+}
+
+.shit input[type="text"],
+input[type="phone"],input[type="date"],input[type="button"],input[type="radio"]
+{
+background:none;
+border: 3px solid rgb(106, 43, 114);
+border-radius: 30px;
+padding: 10px 20px;
+outline: none;
+text-transform: uppercase;
+color: rgb(75, 18, 75);
+font-weight: bolder; 
+font-size:x-large;
+
+}
+.nu
+{
+background:none;
+border: 4px solid rgb(106, 43, 114);
+border-radius: 30px;
+padding: 10px 20px;
+outline: none;
+text-transform: uppercase;
+color: rgb(75, 18, 75);
+font-weight: bolder; 
+font-size:large;
+
+}
+
+.shit input[type="text"]:focus,
+input[type="phone"]:focus,input[type="date"]:focus
+{
+border-color: rgb(17, 202, 131);
+}
+#ty
+{
+
+text-transform: uppercase;
+color: rgb(75, 18, 75);
+font-weight: bolder; 
+font-size:x-large;
+}
+
+</style>
+<script src="/js/detail.js"></script>
+</html>

@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/prism.css"/>
+        <script src="js/prism.js"></script>
+        <script src="js/search.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="head"><p id="ut">VACCINATION PORTAL</p>   </div>
+            <ul class="mylist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="user.html">User-Details</a></li>
+                <li><a href="javascript:alert('Under construction');">About us</a></li>
+                <li><a href="javascript:alert('Under construction');">Contact us</a></li>
+            </ul>
+            <div class="slidershow-container">
+                <div class="mySlides fade"><div style="width: inherit; height: 350px; background-position: center; background-image: url(images/covid.jpg); background-size: inherit;"></div></div>
+                <div class="mySlides fade"><div style="width: inherit; height: 350px; background-position: center; background-image: url(images/header-vax-microsite@2x.png); background-size: inherit;"></div></div>
+                <div class="mySlides fade"><div style="width: inherit; height: 350px; background-position: center; background-image: url(images/slot.jpg); background-size: inherit;"></div></div>
+                <div class="mySlides fade"><div style="width: inherit; height: 350px; background-position: center; background-image: url(images/vaccine.jpeg); background-size: inherit;"></div></div>
+            </div>
+            <script>
+                var slideIndex=0;
+                function showSlide() {
+                    var slides=document.getElementsByClassName("mySlides");
+                    for(var i=0;i<slides.length;i++)
+                        slides[i].style.display="none";
+                    slideIndex++;
+                    if(slideIndex>slides.length)
+                        slideIndex=1;
+                    slides[slideIndex-1].style.display="block";
+                    setTimeout(showSlide,3000);
+                }
+                showSlide();
+            </script>
+            <div class="A">
+                <div class="A1">
+                    "India is set to defeat Covid-19.
+                    Every Indian is making it possible."
+                     <br/><br/>
+                    <center> PM Narendra Modi.</center>
+                </div><br/>
+                <h2>Get Vaccinated In 3 Easy Steps</h2>
+                <center>
+                    <div class="owl" >
+                            <div class="B1">
+                                <img class="photo" src="/images/step-1.png"/>
+                            </div>
+                        
+                            <div class="B1">
+                                <img class="photo" src="/images/step-2.png"/>
+                            </div>
+                        
+                            <div class="B1">
+                                <img class="photo" src="/images/step-3.png"/>
+                            </div>
+                    </div>
+                </center>
+                <h2>Select Any Field</h2>
+                <div class="A2">
+                    <center>
+                        <div class="container">
+                            <div id="groupSection">
+                    
+                                <table>
+                                    <tr><td><h2>Slot Booking:</h2></td><td><a href="registration.html" class="btn">Registration</a></td></tr>
+                                    <tr><td><h2>Admin use:</h2></td><td><a href="user.html" class="btn">Show Details</a></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div id="phone">7992551633</div>
+        <div id="email">skmafarali@gmail.com</div>
+        <script src="json/data.json"></script>
+        <script src="json/paths.json"></script>
+    </body>
+    <style>
+      
+        table{
+            position: absolute;
+          top: 35px;
+          left: 60px;
+          width: 80%;
+          height: 80%;
+          box-sizing: border-box;
+          border-radius: 3px solid #655aa7 ;
+         
+        }
+        table tr td h2
+        {
+        color: black;
+        font-size: xx-large;
+        font-weight: bolder;
+        }
+    </style>
+</html>
